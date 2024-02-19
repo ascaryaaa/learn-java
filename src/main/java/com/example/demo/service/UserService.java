@@ -18,7 +18,7 @@ public class UserService {
     }
 
     public User saveUser(User user) {
-        return userRepository.saveUser(null);
+        return userRepository.saveUser(user);
     }
 
     public List<User> getById(Long id) {
