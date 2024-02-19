@@ -11,7 +11,7 @@ import com.example.demo.model.User;
 public class UserRepository {
     private final List<User> users = new ArrayList<>();
 
-    public User sayUser(User user) {
+    public User saveUser(User user) {
         user.setId((long) users.size() + 1);
         users.add(user);
         return user;
